@@ -152,6 +152,16 @@ button {
   
 }
 
+.link-tornar {
+  position: absolute;
+  top: 25px;   /* ajusta según la altura real del título */
+  left: 161px;
+  z-index: 10;
+  color: white;
+  text-decoration: none;
+  font-size: 0.93;
+}
+
 .boton-menu span {
   display: block;
   width: 32px;
