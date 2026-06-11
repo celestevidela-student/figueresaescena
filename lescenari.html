@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <meta charset="UTF-8" />
+        <title>L'escenari | Figueres a Escena</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles-inici.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/jpeg" href="media/favicon_figueres.png">
+    </head>
+    <body>
+       <header class="site-header">
+      <nav class="nav-principal" aria-label="Navegació principal">
+       
+        <a href="inici.html" class="logo-nav">
+              <img
+              src="media/logos-colorifavicon.png"
+              alt="Logotip Figueres a Escena"
+              class="brand-logo"
+              width="140"
+              height="40"
+              />
+         </a>
+         
+    <button class="boton-menu" type="button" title="abrir-cerrar-menu" aria-label="Obrir o tancar menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+    <ul id="menu-principal">
+      <li><a href="inici.html" class="nav-link">Inici</a></li>
+      <li><a href="lescenari.html" class="nav-link nav-link--active">L’escenari</a></li>
+      <li><a href="programacio.html" class="nav-link">Programació</a></li>
+      <li><a href="contacte.html" class="nav-link">Contacte</a></li>
+    </ul>
+    
+    <button class="canvi-idioma" type="button" aria-label="Canvia l’idioma a català">
+          CAT
+    </button>
+  </nav>
+</header>
+   
+    <main id="main">
+      <!-- HERO L’ESCENARI -->
+      <section class="hero hero--escenari">
+        <div class="hero-media">
+          <img
+            src="media/portada.jpg"
+            alt="Escena teatral a Figueres a Escena"
+            class="hero-image"
+            width="1440"
+            height="560"
+          />
+        </div>
+        <div class="hero-content">
+          <div class="hero-content-inner">
+            <h1>L’escenari</h1>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUÈ ÉS FIGUERES A ESCENA? -->
+      <section class="seccio-lescenari">
+        <div class="section-inner">
+          <h2 class="titol-figueres">Què és Figueres a Escena?</h2>
+          <div class="intro-grid">
+            <p>
+              Figueres a Escena és el projecte 
+              d’arts escèniques i musicals de l’Ajuntament de Figueres, que coordina 
+              la programació del Teatre Municipal el Jardí, la sala La Cate i l’Auditori 
+              Caputxins, juntament amb la d’entitats i empreses culturals de la ciutat.
+             
+              <p>Sota aquest paraigua, es dona visibilitat al Talent KM.0, es faciliten 
+              espais de creació a les companyies locals i s’impulsen activitats paral·leles 
+              i projectes educatius per oferir una experiència cultural més rica i arrelada 
+              al territori.</p>
+              
+              <p>A més, Figueres a Escena treballa per garantir l’accés a la cultura per a 
+            tothom a través de programes d’accessibilitat, col·laboració amb Apropa Cultura i
+            diversos descomptes.
+          </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ESPAIS -->
+      <section class="section seccio-espais" aria-labelledby="spaces-title">
+        <div class="section-inner">
+          <h2 id="espais-titol">Espais</h2>
+          
+           <div class="spaces-layout">
+            <!-- Bloc imatge + controls -->
+            <div class="spaces-media">
+              <img
+                src="media/_mg_6122panorama3.jpg-2993x1691.jpg"
+                alt="Vista general del Teatre Municipal el Jardí"
+                class="spaces-media__image"
+                id="imatge-espai"
+                width="800"
+                height="450"
+              />
+              <!--<img
+                src="media/jardi_4.jpg-900x508.jpg"
+                alt="Vista general del Teatre Municipal el Jardí"
+                class="spaces-media__image"
+                data-space-image
+                width="800"
+                height="450"
+              />
+              <img
+                src="media/jardi2.jpg-2352x1329.jpg"
+                alt="Vista general del Teatre Municipal el Jardí"
+                class="spaces-media__image"
+                data-space-image
+                width="800"
+                height="450"
+              />
+              -->
+              <button class="carrusel-btn spaces-media__nav--prev" type="button" id="boto-prev" aria-label="Imatge anterior"> ‹</button>
+        <button class="carrusel-btn spaces-media__nav--next" type="button" id="boto-next" aria-label="Imatge següent">›</button>
+      </div>
+
+            <!-- Llista d’espais -->
+            
+            <aside class="spaces-sidebar" aria-label="Llista d’espais">
+            <p class="spaces-sidebar__label">Explora els nostres espais</p>
+             
+             <div class="espais">
+              <ul class="espais-listst">
+                <li>
+                  <button type="button" class="espais-list-item espais-list-item--active" 
+                  data-space-id="jardi">
+                  Teatre Municipal el Jardí
+                  </button>
+                </li>
+                
+                <li>
+                  <button type="button" class="espais-list-item" id="cate" data-space-id="cate">
+                    Sala La Cate
+                  </button>
+                </li>
+                
+                <li>
+                  <button type="button" class="espais-list-item" id="caputxins" data-space-id="caputxins">
+                    Auditori Caputxins
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="espais-list-item" id="toni-montal" data-space-id="toni">
+                    Sala Toni Montal
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="espais-list-item" id="aula-teatre" data-space-id="aula">
+                    Aula de teatre
+                  </button>
+                </li>
+              </ul>
+              </div>
+            </aside>
+            </div>
+          </div>
+
+          <!-- Text i documents de l’espai seleccionat -->
+          <div class="espais-detall">
+            <h3 class="espais-detall-titol" id="titol-espai">Teatre Municipal el Jardí</h3>
+
+            <div class="spaces-detail__body">
+              <div class="espais-detall-text" id="text-espai">
+                <p>
+                  El Teatre El Jardí és un dels espais més emblemàtics de Figueres. 
+                  
+                  Es va inaugurar el 29 d’abril de 1916, durant les Fires i Festes 
+                  de la Santa Creu, amb l’òpera La Gioconda del Liceu de Barcelona.
+                   
+                  L’empresari Pau Pagès en va impulsar la construcció a l’actual plaça 
+                  Josep Pla, i ben aviat es va convertir en el centre cultural més 
+                  actiu de la ciutat, combinant teatre, òpera, sarsuela i cinema.
+                </p>
+                
+                <p>
+                  Després d’una gran reforma a finals dels vuitanta, el teatre va 
+                  reobrir el 1991 amb un aforament renovat i millors instal·lacions.
+                  
+                  Avui El Jardí, amb més de 900 localitats, continua sent un referent 
+                  cultural i punt de trobada per als amants de les arts escèniques a 
+                  Figueres. L’any 1983 l’Ajuntament va adquirir l’edifici i el va transformar en el 
+                </p>
+                <p>
+                  teatre municipal, obrint una nova etapa amb una programació estable. 
+                  El primer espectacle va ser El cafè de la Marina, i des de llavors hi 
+                  han passat companyies com El Tricicle, Dagoll Dagom o Els Joglars.
+                </p>
+              </div>
+
+              <div class="espais-detall-meta">
+                <div class="espais-detall-document">
+                  <h4>Documents</h4>
+                  <ul class="spaces-docs">
+                    <li><a href="#" class='planol' id="link-planol">Plànol de l’espai (PDF)</a></li>
+                    <li><a href="#" class='fitxa' id="link-fitxa">Fitxa tècnica</a></li>
+                  </ul>
+                </div>
+
+                <div class="espais-detall-direccio">
+                  <h4>Direcció</h4>
+                  <p id="direccio-espai">
+                    Plaça Josep Pla<br />
+                    17600 Figueres, Girona
+                  </p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- PROJECTES EDUCATIUS -->
+      <section class="section section-projectes">
+        <div class="section-inner projects-grid">
+          <div class="projects-copy">
+            <h2>Projectes educatius</h2>
+            <p>
+            L’Ajuntament de Figueres, juntament amb entitats del territori, 
+            impulsa diversos programes per apropar les arts escèniques i 
+            musicals a infants i joves d’infantil, primària i secundària.
+            </p>
+            <p>
+             El programa es completa amb iniciatives com el projecte Planters 
+             de ConArte Internacional, que integra música i dansa en el dia a
+              dia de centres amb alta diversitat cultural, i el Torneig de 
+              Dramatúrgia per a Instituts, que anima l’alumnat a crear i 
+              defensar els seus propis textos teatrals damunt l’escenari.
+            </p>
+            <p>
+              Cada curs es programen funcions de teatre i audicions escolars 
+              amb dossiers pedagògics i, en el cas de secundària, col·loquis 
+              post-funció amb les companyies. Iniciatives com la UAP! i la 
+              Cantània fomenten el cant col·lectiu i els valors de pau i 
+              convivència a través de grans cantates participatives.
+            </p>
+            <p>Projectes com Mapadeball/Tots Dansen introdueixen la dansa 
+              contemporània als instituts amb formació per al professorat i creació 
+              de coreografies pròpies, sovint coordinades a la ciutat per l’associació 
+              Agitart. Paral·lelament, l’Aula de Teatre ofereix tallers a escoles, activitats
+              extraescolars i classes obertes al Teatre Municipal El Jardí per a totes les edats, 
+              incloent-hi projectes específics per a col·lectius amb necessitats especials.</p>
+          </div>
+          <div class="fotografia">
+          <figure class="projects-media">
+            <img class="cantania"
+              src="media/cantania-maig20193.jpg-960x548.jpg"
+              alt="Projecte educatiu al Teatre Municipal el Jardí"
+              width="480"
+              height="320"/>
+            <figcaption>Cantània - Maig 2019 | © Ajuntament de Figueres</figcaption>
+          </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALERIA FOTOGRÀFICA -->
+      <section class="section seccio-galeria" aria-labelledby="titol-galeria">
+        <div class="section-inner">
+          <h2 id="titol-galeria">Galeria fotogràfica</h2>
+
+          <div class="liniadeltemps">
+            <div class="liniadeltemps-linia"></div>
+
+            <!-- ANY 2019 -->
+            <article class="liniadeltemps-any" data-gallery-year="2019">
+              <div class="liniadeltemps-label">
+                <span>20</span>
+                <span>19</span>
+              </div>
+              
+              <div class="liniadeltemps-any-galeria"> 
+                <div class="gallery-carousel" data-carr="2019" tabindex="0">
+                
+                <div class="gallery-slide">
+                <img
+                  src="media/2019/25illusions-maglari-abril2019.jpg-1800x1200.jpg"
+                  alt="Espectacle 2019"
+                  class="gallery-carousel__image"
+                  width="800"
+                  height="400"
+                  data-gallery-image="2019"
+                />
+                </div>
+                
+                <div class="gallery-slide">
+                <img
+                  src="media/2019/aurc.elsodelesesquerdes-lesimpuxibles-marcr2019.jpg-1800x1200.jpg"
+                  alt="Espectacle 2019"
+                  class="gallery-carousel__image"
+                  width="800"
+                  height="400"
+                  data-gallery-image="2019"
+                />
+                </div>
+                
+                <div class="gallery-slide">
+                <img
+                  src="media/2019/paparmozart-joanirogerperaamblorquestrasimfornicadelvallers-marcr2019.jpg-1800x1200.jpg"
+                  alt="Espectacle 2019"
+                  class="gallery-carousel__image"
+                  width="800"
+                  height="400"
+                  data-gallery-image="2019"
+                />
+                </div>
+                
+                <div class="gallery-slide">
+                <img
+                  src="media/2019/reylear-atalayatnt-octubre2019.jpg-1800x1200.jpg"
+                  alt="Espectacle 2019"
+                  class="gallery-carousel__image"
+                  width="800"
+                  height="400"
+                  data-gallery-image="2019"
+                />
+                </div>
+                
+                <div class="gallery-slide">
+                <img
+                  src="media/2019/swinginratthecinema-festivaldejazz-juny2019.jpg-1800x1200.jpg"
+                  alt="Espectacle 2019"
+                  class="gallery-carousel__image"
+                  width="800"
+                  height="400"
+                  data-gallery-image="2019"
+                />
+                </div>
+                </div>
+                <div class="carrusel-galeria-controls">
+                  <button type="button" class="gallery-btn" data-gallery-prev="2019" aria-label="Foto anterior 2019">
+                    ‹
+                  </button>
+                  <button type="button" class="gallery-btn" data-gallery-next="2019" aria-label="Foto següent 2019">
+                    ›
+                  </button>
+                </div>
+                </div>
+            </article>
+
+            <!-- ANY 2020 -->
+            <article class="liniadeltemps-any" data-gallery-year="2020">
+              <div class="liniadeltemps-label">
+                <span>20</span>
+                <span>20</span>
+              </div>
+              
+              <div class="liniadeltemps-any-galeria"> 
+                <div class="gallery-carousel" data-carr="2020" tabindex="0">
+                
+                <div class="gallery-slide">
+                <img
+                  src="media/2020/bruels-lallarga-febrer2020.jpg-1800x1200.jpg"
+                  alt="Espectacle 2019"
+                  class="gallery-carousel__image"
+                  width="800"
+                  height="400"
+                  data-gallery-image="2019"
+                />
+                </div>
+                
+                <div class="gallery-slide">
+                <img
+                  src="media/2020/elpequenroponi-flyhardproduccions-desembre2020.jpg-1800x1200.jpg"
+                  alt="Espectacle 2019"
+                  class="gallery-carousel__image"
+                  width="800"
+                  height="400"
+                  data-gallery-image="2019"
+                />
+                </div>
+                
+                <div class="gallery-slide">
+                <img
+                  src="media/2020/laika-xirriquiteulateatre-gener2020.jpg-1800x1200.jpg"
+                  alt="Espectacle 2019"
+                  class="gallery-carousel__image"
+                  width="800"
+                  height="400"
+                  data-gallery-image="2019"
+                />
+                </div>
+                
+                <div class="gallery-slide">
+                <img
+                  src="media/2020/larambladelesfloristes-tnc-febrer2020.jpg-1800x1200.jpg"
+                  alt="Espectacle 2019"
+                  class="gallery-carousel__image"
+                  width="800"
+                  height="400"
+                  data-gallery-image="2019"
+                />
+                </div>
+                
+                 <div class="gallery-slide">
+                <img
+                  src="media/2020/latempesta-parkingshakespeare-marcr2021.jpg-1800x1200.jpg"
+                  alt="Espectacle 2019"
+                  class="gallery-carousel__image"
+                  width="800"
+                  height="400"
+                  data-gallery-image="2019"
+                />
+                </div>
+                
+                <div class="gallery-slide">
+                <img
+                  src="media/2020/rostollcremat-produccionsdeferro-febrer2020.jpg-1800x1200.jpg"
+                  alt="Espectacle 2019"
+                  class="gallery-carousel__image"
+                  width="800"
+                  height="400"
+                  data-gallery-image="2019"
+                />
+                </div>
+
+                <div class="carrusel-galeria-controls">
+                  <button type="button" class="gallery-btn" data-gallery-prev="2020" aria-label="Foto anterior 2020">
+                    ‹
+                  </button>
+                  <button type="button" class="gallery-btn" data-gallery-next="2020" aria-label="Foto següent 2020">
+                    ›
+                  </button>
+                </div>
+              </div>
+              </div>
+            </article>
+
+            <!-- ANY 2021 -->
+            <article class="liniadeltemps-any" data-gallery-year="2021">
+              <div class="liniadeltemps-label">
+                <span>20</span>
+                <span>21</span>
+              </div>
+              
+              <div class="liniadeltemps-any-galeria"> 
+              <div class="gallery-carousel" data-carr="2021" tabindex="0">
+                
+              <div class="gallery-slide">
+                <img
+                  src="media/2021/aroundtheworld-brodasbros-abril2021.jpg-1800x1200.jpg"
+                  alt="Espectacle 2021"
+                  class="gallery-carousel__image"
+                  width="800"
+                  height="400"
+                  data-gallery-image="2019"
+                />
+                </div>
+                
+                <div class="gallery-slide">
+                <img
+                  src="media/2021/cantojoilamuntanyaballa-laperla29-novembre2021.jpg-1800x1200.jpg"
+                  alt="Espectacle 2021"
+                  class="gallery-carousel__image"
+                  width="800"
+                  height="400"
+                  data-gallery-image="2019"
+                />
+                </div>
+                
+                <div class="gallery-slide">
+                <img
+                  src="media/2021/finsitotlafoscor-ateneupopular9barris-marcr2021.jpg-1800x1200.jpg"
+                  alt="Espectacle 2021"
+                  class="gallery-carousel__image"
+                  width="800"
+                  height="400"
+                  data-gallery-image="2019"
+                />
+                </div>
+                
+                 <div class="gallery-slide">
+                <img
+                  src="media/2021/ilbarbieredisiviglia-fundaciororperacatalunya-octubre2021_1.jpg-1800x1200.jpg"
+                  alt="Espectacle 2021"
+                  class="gallery-carousel__image"
+                  width="800"
+                  height="400"
+                  data-gallery-image="2019"
+                />
+                </div>
+                
+                <div class="gallery-slide">
+                <img
+                  src="media/2021/jaurira-colloquipost-funcior-gener2021.jpg-1800x1200.jpg"
+                  alt="Espectacle 2021"
+                  class="gallery-carousel__image"
+                  width="800"
+                  height="400"
+                  data-gallery-image="2019"
+                />
+                </div>
+                
+                <div class="carrusel-galeria-controls">
+                  <button type="button" class="gallery-btn" data-gallery-prev="2021" aria-label="Foto anterior 2021">
+                    ‹
+                  </button>
+                  <button type="button" class="gallery-btn" data-gallery-next="2021" aria-label="Foto següent 2021">
+                    ›
+                  </button>
+                </div>
+                </div>
+                </div>
+                </article>
+            </div>
+          </div>
+      </section>
+    </main>
+
+    <!-- FOOTER igual que a la home -->
+   <footer class="site-footer">
+  <div class="footer-main">
+    <div class="footer-brand">
+        <img src="media/logo_negatiu.png" class="footer-logo" alt="Figueres a Escena" />
+
+      <div class="footer-support">
+        <p>Amb el suport de</p>
+
+        <div class="footer-support-logos">
+          <img src="media/logo-aj-figueres-blanc.svg" alt="Ajuntament de Figueres" />
+        </div>
+      </div>
+      
+      <p class="footer-copy">© Figueres a Escena</p>
+    </div>
+    
+    <nav class="footer-nav" aria-label="Navegació del footer">
+      <a href="inici.html">Inici</a>
+      <a href="lescenari.html">L’escenari</a>
+      <a href="programacio.html">Programació</a>
+      <a href="contacte.html">Contacte</a>
+    </nav>
+    
+    <div class="footer-social">
+      <h3>Segueix-nos!</h3>
+      
+      <a href="https://www.instagram.com/figueresaescena_/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/instagram-blanc.svg" alt="" aria-hidden="true" />
+        <span>Instagram</span>
+      </a>
+      
+      <a href="https://www.youtube.com/channel/UCUysJDxSkF0yMtSWq9Wa2jw" target="_blank" rel="noopener noreferrer">
+        <img src="assets/youtube-blanc.svg" alt="" aria-hidden="true" />
+        <span>Youtube</span>
+      </a>
+      
+      <a href="https://www.tiktok.com/@figueresaescena" target="_blank" rel="noopener noreferrer">
+        <img src="assets/tiktok-blanc.svg" alt="" aria-hidden="true" />
+        <span>TikTok</span>
+      </a>
+      
+      <a href="https://www.facebook.com/figueresaescena/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/facebook-blanc.svg" alt="" aria-hidden="true" />
+        <span>Facebook</span>
+      </a>
+      
+      <a href="https://x.com/figueresaescena" target="_blank" rel="noopener noreferrer">
+        <img src="assets/x-blanc.svg" alt="" aria-hidden="true" />
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="..." />
+              </svg>
+        <span>X/Twitter</span>
+      </a>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <a href="/avis-legal">Avís legal</a>
+    <a href="/politica-privacitat">Política de privacitat</a>
+    <a href="/cookies">Cookies</a>
+  </div>
+</footer>
+    <script src="js/espais.js"></script>
+    <script src="js/lescenari-carrusel.js"></script>
+</body>
+</html>

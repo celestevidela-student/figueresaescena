@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Inici | Figueres a Escena</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles-inici.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpeg" href="media/favicon_figueres.png">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-principal" aria-label="Navegació principal">
+
+        <a href="inici.html" class="logo-nav">
+              <img
+              src="media/logos-colorifavicon.png"
+              alt="Logotip Figueres a Escena"
+              class="brand-logo"
+              width="140"
+              height="40"
+              />
+         </a>
+         
+    <button class="boton-menu" type="button" title="abrir-cerrar-menu" aria-label="Obrir o tancar menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul id="menu-principal">
+      <li><a href="inici.html" class="nav-link nav-link--active">Inici</a></li>
+      <li><a href="lescenari.html" class="nav-link">L’escenari</a></li>
+      <li><a href="programacio.html" class="nav-link">Programació</a></li>
+      <li><a href="contacte.html" class="nav-link">Contacte</a></li>
+    </ul>
+    
+    <button class="canvi-idioma" type="button" aria-label="Canvia l’idioma a català">
+          CAT
+    </button>
+  </nav>
+</header>
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media">
+          <img
+            src="media/parkingshakespear_retallat.jpg-870x580.jpg"
+            alt="Actor a l’escenari amb coroneta"
+            class="hero-image"
+            width="1440"
+            height="600"
+          />
+        </div>
+        <div class="hero-content">
+          <h1 id="hero-title">L’amor fa riure i plorar, oi Will?</h1>
+          <p class="hero-meta">dijous, 12 de març | 18:00 h | Teatre El Jardí</p>
+          <button class="btn btn-comprar-hero" type="button">Comprar entrades</button>
+        </div>
+      </section>
+
+      <!-- CALENDARI -->
+      <section class="calendar-section" aria-labelledby="calendar-title">
+        <div class="section-header">
+          <h2>Calendari</h2>
+          <div class="calendar-controls">
+          </div>
+        </div>
+
+        <div class="calendar-strip" data-calendar-strip>
+          <!-- Els dies són d’exemple, pots generar-los dinàmicament si vols -->
+          <button class="calendar-day">
+            <span class="calendar-day__number">1</span>
+            <span class="calendar-day__month">Març</span>
+          </button>
+          
+          <button class="calendar-day">
+            <span class="calendar-day__number">2</span>
+            <span class="calendar-day__month">Març</span>
+          </button>
+          <button class="calendar-day">
+            <span class="calendar-day__number">3</span>
+            <span class="calendar-day__month">Març</span>
+          </button>
+          <button class="calendar-day">
+            <span class="calendar-day__number">4</span>
+            <span class="calendar-day__month">Març</span>
+          </button>
+          <button class="calendar-day">
+            <span class="calendar-day__number">5</span>
+            <span class="calendar-day__month">Març</span>
+          </button>
+          <button class="calendar-day">
+            <span class="calendar-day__number">6</span>
+            <span class="calendar-day__month">Març</span>
+          </button>
+          <button class="calendar-day">
+            <span class="calendar-day__number">7</span>
+            <span class="calendar-day__month">Març</span>
+          </button>
+          <button class="calendar-day">
+            <span class="calendar-day__number">8</span>
+            <span class="calendar-day__month">Març</span>
+          </button>
+          <button class="calendar-day">
+            <span class="calendar-day__number">9</span>
+            <span class="calendar-day__month">Març</span>
+          </button>
+          <button class="calendar-day calendar-day--active">
+            <span class="calendar-day__number">10</span>
+            <span class="calendar-day__month">Març</span>
+          </button>
+          <button class="calendar-day">
+            <span class="calendar-day__number">11</span>
+            <span class="calendar-day__month">Març</span>
+          </button>
+          
+          <!-- dia d'espectacle -->
+          <button class="calendar-day" 
+           data-date="12 de març"
+           data-type="Teatre"
+           data-title="Göteberg"
+           data-time="20:00h"
+           data-place="Teatre El Jardí"
+           >
+           
+            <span class="calendar-day__number calendar-day-diaespectacle">12</span>
+            <span class="calendar-day__month calendar-day-diaespectacle ">Març</span>
+          </button>
+          <div id="modal-dia" class="modal-dia oculto"></div>
+          
+          <button class="calendar-day">
+            <span class="calendar-day__number">13</span>
+            <span class="calendar-day__month">Març</span>
+          </button>
+          <button class="calendar-day">
+            <span class="calendar-day__number">14</span>
+            <span class="calendar-day__month">Març</span>
+          </button>
+          <button class="calendar-day">
+            <span class="calendar-day__number">15</span>
+            <span class="calendar-day__month">Març</span>
+          </button>
+          <button class="calendar-day">
+            <span class="calendar-day__number">16</span>
+            <span class="calendar-day__month">Març</span>
+          </button>
+          <button class="calendar-day">
+            <span class="calendar-day__number">17</span>
+            <span class="calendar-day__month">Març</span>
+          </button>
+          <button class="calendar-day">
+            <span class="calendar-day__number">18</span>
+            <span class="calendar-day__month">Març</span>
+          </button>
+          <button class="calendar-day">
+            <span class="calendar-day__number">19</span>
+            <span class="calendar-day__month">Març</span>
+          </button>
+          <button class="calendar-day">
+            <span class="calendar-day__number">20</span>
+            <span class="calendar-day__month">Març</span>
+          </button>
+          <button class="calendar-day">
+            <span class="calendar-day__number">21</span>
+            <span class="calendar-day__month">Març</span>
+          </button>
+        </div>
+        
+      </section>
+
+      <!-- PROPERS ESPECTACLES -->
+      <section
+        class="shows-section"
+        aria-labelledby="shows-title"
+        id="programacio">
+        <div class="section-header">
+          <h2 class="titol-propers">Propers espectacles</h2>
+          <div class="carousel-controls">
+          </div>
+        </div>
+
+        <div class="shows-viewport" data-carousel-viewport>
+          <div class="shows-track">
+            <!-- Götebrog -->
+            <article class="show-card">
+              <img
+                src="media/goteborg_comprimit.jpg-3907x5209.jpg"
+                alt="Fotografia de l’espectacle Göteborg"
+                class="show-card-image"
+                width="400"
+                height="260"
+              />
+              <div class="show-card-body">
+               
+                <h3>Göteborg</h3>
+                <p class="show-card-info">
+                  Jordi Casanovas | Teatre El Jardí | Dv. 13 de març
+                </p>
+                <p class="show-card-text">
+                  La Paula es presenta a casa d’en Sergi amb una proposta urgent: reconstruir 
+                  l’última nit del viatge a Göteborg, on la seva connexió es va trencar per sempre.
+                </p>
+                <a href="obra.goteberg.html" class="btn btn-comprar">Comprar entrades</a>
+              </div>
+              </article>
+           
+          
+
+            <!-- La juventud baila -->
+            
+            <article class="show-card">
+              <img
+                src="media/ljbposterpromodefinitiu1_page-0001.jpg-870x580.jpg"
+                alt="Cartell de l’espectacle La juventud baila encara"
+                class="show-card-image"
+                width="400"
+                height="260"
+              />
+              <div class="show-card-body">
+                <h3>«La juventud baila...» encara!</h3>
+                <p class="show-card-info">
+                  Josep Massó i Laura Herrera | Teatre El Jardí | Dg. 15 de
+                  març
+                </p>
+                <p class="show-card-text">
+                  Reviu la música de diverses generacions 
+                  recordant el mític programa Aplauso. 
+                </p>
+                <a href="error404.html" class="btn btn-comprar">Comprar entrades</a>
+              </div>
+            </article>
+
+            <!-- Faula -->
+            <article class="show-card">
+              <img
+                src="media/faula.jpg-870x580.jpg"
+                alt="Fotografia de l’espectacle Faula"
+                class="show-card-image"
+                width="400"
+                height="260"
+              />
+              <div class="show-card-body">
+                <h3>Faula</h3>
+                <p class="show-card-info">
+                  Roser López Espinosa | Teatre El Jardí | Dv. 20 de març
+                </p>
+                <p class="show-card-text">
+                  Dins de cada món hi ha molts mons possibles. Com en un joc
+                   de miralls, podem entreveure els fils que ens connecten i 
+                   els vincles que ens sostenen.
+                </p>
+                <a href="error404.html" class="btn btn-comprar">Comprar entrades</a>
+              </div>
+            </article>
+            
+            <!-- Paula Valls -->
+            <article class="show-card">
+              <img
+                src="media/paulavalls.jpg-870x580.jpg" alt="Fotografia de l’espectacle Faula" class="show-card-image" width="400" height="260"/>
+              <div class="show-card-body">
+                <h3>Paula Valls</h3>
+                <p class="show-card-info">
+                  66 BUTAQUES | Sala Toni Montal (La Cate) | Dv. 21 de març
+                </p>
+                <p class="show-card-text">
+                  Després del seu precoç debut amb només 16 anys, assolit 
+                  amb èxit, Paula Valls porta al 66butaques el concert de gira
+                   dels deu anys damunt els escenaris
+                </p>
+               <a href="error404.html" class="btn btn-comprar">Comprar entrades</a>
+              </div>
+            </article>
+            
+            <!--nallar-->
+            <article class="show-card">
+              <img
+                src="media/nallar_comprimit.jpg-870x580.jpg" alt="Fotografia de l’espectacle nallar" class="show-card-image" width="400" height="260"/>
+              <div class="show-card-body">
+                <h3>Nallar</h3>
+                <p class="show-card-info">
+                  Inspira Teatre | Teatre El Jardí | Dg. 22 de març
+                </p>
+                <p class="show-card-text">
+                  Nallar és una peça cantada que homenatja la saviesa de les dones que treballen la terra amb les mans, que ens transporta a un món de calidesa, arrel i llar.
+                </p>
+                <a href="error404.html" class="btn btn-comprar">Comprar entrades</a>
+              </div>
+            </article>
+            
+            <!-- mapa de ball-->
+            <article class="show-card">
+              <img
+                src="media/mapadeball.jpg-870x580.jpg" alt="Fotografia de l’espectacle mapa de ball" class="show-card-image" width="400" height="260"/>
+              <div class="show-card-body">
+                <h3>Mapadeball 2026 ∙ Altres mirades</h3>
+                <p class="show-card-info">
+                  Projecte educatiu | Teatre El Jardí | Dimecres 25 i dijous 26 de març
+                </p>
+                <p class="show-card-text">
+                  Després del seu precoç debut amb només 16 anys, assolit 
+                  amb èxit, Paula Valls porta al 66butaques el concert de gira
+                   dels deu anys damunt els escenaris
+                </p>
+                <a href="error404.html" class="btn btn-comprar">Comprar entrades</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- NOTÍCIES -->
+      <section class="seccio-noticies" aria-labelledby="news-title">
+       <div class="contenidor-notices">
+        <h2 class=noticies-titol>Notícies destacades</h2>
+
+        <article class="notices-card">
+          <div class="news-card-contingut">
+            <h3 class="titol-noticies">
+             L’Ajuntament de Figueres impulsa la millora de la seguretat al Teatre Municipal el Jardí amb una subvenció de la Generalitat
+            </h3>
+            <p>
+              L’Ajuntament de Figueres ha obtingut una subvenció de la Generalitat de Catalunya per millorar la seguretat dels artistes i dels professionals tècnics dels equipaments culturals, en el marc de la convocatòria biennal per a la millora d’infraestructures d’equipaments culturals 2024-2026.
+            </p>
+            <a href="error404.html" class="enllac-llegir">Llegir més → </a>
+          </div>
+          <div>
+            <img
+              src="media/whatsappimage2025-12-18at16.52.42.jpeg-870x579.jpg"
+              alt="Equipament tècnic al teatre"
+              width="320"
+              height="200" class="imatge-noticies"/>
+          </div>
+        </article>
+        </div>
+      </section>
+
+      <!-- ACCESSIBILITAT (ACORDEÓ) -->
+      <section
+        class="access-section"
+        aria-labelledby="access-title"
+        id="espai" >
+        <h2 class=titol-accessibilitat>Accessibilitat</h2>
+        <div>
+        <div class="accordion">
+          <div class="acordeo-info">
+             <div class="acordeo-items">
+              <button type="button" class="acordeo-toggle">
+                <span>Teatre El Jardí</span>
+                <span class="acordeo-icon">+</span>
+              </button>
+              <div id="acordeo-interpretacio" class="acordeo-contingut oculto">
+                <ul>
+                    <li>Disposa d'un ascensor per accedir a les diferents plantes de l'equipament.</li>
+                    <li>Els equipaments disposen d’espais reservats a cadires de rodes, disponibles en la venda online o bé demanant-ho al personal de taquilla.</li>
+                    <li>Els equipaments disposen d’alçadors per facilitar la visibilitat als més menuts. Cal demanar-los al personal.</li>
+                    <li>Els tres equipaments disposen de bucle magnètic, un sistema de transmissió del so per a persones amb capacitat auditiva reduïda. Aquest servei s’adreça a persones portadores d’audiòfons o d’implants coclears.</li>
+                </ul>
+              </div>
+              </div>
+          </div>
+          </div>
+           
+            <div class="acordeo-info">
+             <div class="acordeo-items">
+              <button type="button" class="acordeo-toggle">
+                <span>Sala La Cate</span>
+                <span class="acordeo-icon">+</span>
+              </button>
+              <div id="salalacate" class="acordeo-contingut oculto">
+                <ul>
+                    <li>Els equipaments disposen d’espais reservats a cadires de rodes, disponibles en la venda online o bé demanant-ho al personal de taquilla.</li>
+                    <li>Els equipaments disposen d’espais reservats a cadires de rodes, disponibles en la venda online o bé demanant-ho al personal de taquilla.</li>
+                    <li>Els equipaments disposen d’alçadors per facilitar la visibilitat als més menuts. Cal demanar-los al personal de sala.</li>
+                    <li>Els equipaments disposen d’auriculars per a persones amb pèrdua auditiva que permeten seguir correctament tot l’espectacle amb el so amplificat. Cal demanar-los al personal de sala.</li>
+                </ul>
+              </div>
+              </div>
+          </div>
+            <div>
+          <div class="acordeo-info">
+             <div class="acordeo-items">
+              <button type="button" class="acordeo-toggle">
+                <span>Auditori Caputxins</span>
+                <span class="acordeo-icon">+</span>
+              </button>
+              <div id="auditori" class="acordeo-contingut oculto">
+                <ul>
+                    <li>Els equipaments disposen d’espais reservats a cadires de rodes, disponibles en la venda online o bé demanant-ho al personal de taquilla.</li>
+                    <li>Els equipaments disposen d’auriculars per a persones amb pèrdua auditiva que permeten seguir correctament tot l’espectacle amb el so amplificat. Cal demanar-los al personal de sala.</li>
+                </ul>
+              </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+  <footer class="site-footer">
+  <div class="footer-main">
+    <div class="footer-brand">
+        <img src="media/logo_negatiu.png" class="footer-logo" alt="Figueres a Escena" />
+
+      <div class="footer-support">
+        <p>Amb el suport de</p>
+
+        <div class="footer-support-logos">
+          <img src="media/logo-aj-figueres-blanc.svg" alt="Ajuntament de Figueres" />
+        </div>
+      </div>
+      
+      <p class="footer-copy">© Figueres a Escena</p>
+    </div>
+    
+    <nav class="footer-nav" aria-label="Navegació del footer">
+      <a href="inici.html">Inici</a>
+      <a href="lescenari.html">L’escenari</a>
+      <a href="programacio.html">Programació</a>
+      <a href="contacte.html">Contacte</a>
+    </nav>
+    
+    <div class="footer-social">
+      <h3>Segueix-nos!</h3>
+      
+      <a href="https://www.instagram.com/figueresaescena_/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/instagram-blanc.svg" alt="" aria-hidden="true" />
+        <span>Instagram</span>
+      </a>
+      
+      <a href="https://www.youtube.com/channel/UCUysJDxSkF0yMtSWq9Wa2jw" target="_blank" rel="noopener noreferrer">
+        <img src="assets/youtube-blanc.svg" alt="" aria-hidden="true" />
+        <span>Youtube</span>
+      </a>
+      
+      <a href="https://www.tiktok.com/@figueresaescena" target="_blank" rel="noopener noreferrer">
+        <img src="assets/tiktok-blanc.svg" alt="" aria-hidden="true" />
+        <span>TikTok</span>
+      </a>
+      
+      <a href="https://www.facebook.com/figueresaescena/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/facebook-blanc.svg" alt="" aria-hidden="true" />
+        <span>Facebook</span>
+      </a>
+      
+      <a href="https://x.com/figueresaescena" target="_blank" rel="noopener noreferrer">
+        <img src="assets/x-blanc.svg" alt="" aria-hidden="true" />
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="..." />
+              </svg>
+        <span>X/Twitter</span>
+      </a>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <a href="/avis-legal">Avís legal</a>
+    <a href="/politica-privacitat">Política de privacitat</a>
+    <a href="/cookies">Cookies</a>
+  </div>
+</footer>
+    <script src="js/inici.js"></script>
+    <script src="js/tornar.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
+</html>
